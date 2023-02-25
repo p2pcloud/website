@@ -1,0 +1,38 @@
+.hero {
+    section {
+        background: url("/imgs/glow.png") no-repeat 30% center;
+        /* animation: back-pulse 1500ms infinite backwards alternate; */
+    }
+
+    h1 {
+        font-size: clamp(2.5em, 6vw, 4.5em);
+    }
+
+    h1 sub {
+        display: block;
+        padding: 1em 0;
+        font-weight: 200;
+        font-size: large;
+    }
+
+    .label {
+        background: var(--gradient-2);
+        color: var(--light);
+        border-radius: 1em;
+        display: inline-block;
+        padding: var(--padding-sm);
+        font-weight: 100;
+    }
+
+    @keyframes back-pulse {
+        from {
+            background-size: 15%;
+            /* opacity: 0; */
+        }
+
+        to {
+            background-size: 50%;
+            /* opacity: 1; */
+        }
+    }
+}

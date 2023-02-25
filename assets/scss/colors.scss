@@ -1,0 +1,18 @@
+.text-primary {
+    background: var(--brand);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-magenta {
+    color: var(--magenta)
+}
+
+.text-cyan {
+    color: var(--cyan)
+}
+
+.text-blue {
+    color: var(--blue)
+}

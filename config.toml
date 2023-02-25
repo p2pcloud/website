@@ -1,0 +1,4 @@
+baseURL = 'https://p2pcloud.io/'
+languageCode = 'en-us'
+title = 'Decentralized Cloud on Avalanche blockchain'
+#theme = 'lugo'

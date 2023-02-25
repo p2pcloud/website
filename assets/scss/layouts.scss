@@ -1,0 +1,68 @@
+.cols {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+
+/* Align */
+.cols.middle {
+    align-items: center;
+}
+
+.cols.center {
+    justify-content: center;
+}
+
+
+/* Sizes */
+.cols>* {
+    flex: auto;
+    min-width: min-content;
+}
+
+.cols.col-2>* {
+    flex: calc(50% - var(--gap));
+    min-width: min-content;
+}
+
+.cols.col-3>* {
+    flex: calc(100% / 3 - var(--gap));
+    min-width: min-content;
+}
+
+.cols.col-fit>* {
+    flex: 0 fit-content;
+}
+
+/* Colors */
+.surface-1 {
+    border: 0.1em solid var(--surface-2);
+    background-color: var(--surface-1);
+}
+
+.surface-2 {
+    border: 0.1em solid var(--surface-3);
+    background-color: var(--surface-2);
+}
+
+.gradient-1 {
+    border: 0.1em solid var(--surface-2);
+    background: var(--gradient-1);
+}
+
+.gradient-2 {
+    border: 0.1em solid var(--surface-3);
+    background: var(--gradient-2);
+}
+
+.gradient-brand {
+    border: 0.1em solid transparent;
+    background: var(--gradient-brand);
+}
+
+/* Wrap */
+.container {
+    margin-inline: calc(max(0%, 50% - var(--viewport) / 2) + var(--gap));
+}

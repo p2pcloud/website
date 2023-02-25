@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+
+<head>
+    <title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
+    <link rel="canonical" href="{{ .Site.BaseURL }}">
+    <link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
+
+    {{ $sass := resources.Get "scss/_index.scss" }}
+    {{ $style := $sass | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    {{ with .Site.Params.favicon }}
+    <link rel="icon" href="{{ . }}">
+    {{ end -}}
+    <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+    {{ if isset .Params "tags" }}
+    <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . " , " }}{{ end }}">
+    {{ end -}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header class="cols container header">
+        <a id="logo" alt="p2pcloud" data-sveltekit-reload="" href="/" class="svelte-1uzzcqz">p2pcloud</a>
+        <menu class="dropdown topmenu">
+            <button id="menu" class="action icon icon-apps svelte-1orqnzs"></button>
+            <nav class="cols nav">
+                <a href="/docs" data-sveltekit-reload="" class="svelte-1orqnzs active">Docs </a>
+                <a href="https://t.me/p2pcloud" data-sveltekit-reload="" class="svelte-1orqnzs">Join our Telegram </a>
+                <a href="/docs/overview/getting-started/" data-sveltekit-reload="" class="svelte-1orqnzs">Get started </a>
+            </nav>
+        </menu> <a class="button primary svelte-13ihuot" href="/panel#!/vms">App</a>
+    </header>
+    {{ block "main" . }}
+    {{ .Content }}
+    {{ end }}
+    {{ block "footer" . }}
+    <footer>
+    </footer>
+    {{ end }}
+</body>
+
+</html>

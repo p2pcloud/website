@@ -1,0 +1,153 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1;
+}
+
+a.active,
+a:not(.button):hover {
+    --active: var(--brand);
+    background: var(--active);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+}
+
+a:not(.button) {
+    color: var(--light);
+}
+
+a:not(.button):hover,
+a.active {
+    font-size: inherit;
+    text-decoration: none;
+}
+
+strong {
+    font-size: larger;
+    font-weight: bold;
+    /* padding: 0 0.35em; */
+    border-radius: 0.5em;
+}
+
+small {
+    color: var(--gray);
+}
+
+samp {
+    color: var(--error);
+    background: var(--dark);
+    border-radius: var(--border-radius-sm);
+    word-break: break-all;
+    font-size: medium;
+}
+
+/* Lists */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: orderedlist;
+}
+
+:is(ul, ol) li {
+    margin: 0.5em 0;
+}
+
+ul li {
+    position: relative;
+    white-space: initial;
+    min-width: fit-content;
+}
+
+ol li {
+    /* counter-increment: orderedlist; */
+    content: counter(orderedlist);
+}
+
+ul li::before {
+    content: '';
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    border: 0.15em solid transparent;
+    background: var(--border-brand);
+    border-radius: 50%;
+    margin-right: 0.75em;
+}
+
+p {
+    line-height: var(--line-height);
+}
+
+/* Table */
+table {
+    /* display: flex; */
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 1.5em;
+}
+
+table thead {
+    color: var(--light);
+}
+
+table th {
+    color: var(--gray);
+}
+
+table :is(th, td) {
+    padding: 0.25em 0.5em 0.25em 0;
+}
+
+table td:nth-child(1) {
+    color: var(--gray);
+}
+
+table td:nth-child(2) {
+    word-break: break-all;
+    /* white-space: initial; */
+    min-width: fit-content;
+}
+
+.break {
+    word-break: break-all;
+    white-space: initial;
+    min-width: fit-content;
+}
+
+pre code {
+    display: block;
+    padding: var(--padding);
+    overflow: auto;
+}
+
+code {
+    border-radius: var(--border-radius-sm);
+    background: var(--dark);
+    padding: var(--padding-sm);
+    line-height: var(--line-height);
+    color: var(--gray);
+    font-family: monospace;
+    font-size: smaller;
+    word-wrap: anywhere;
+}
+
+code .comments {
+    color: var(--surface-3)
+}
+
+
+/* Size */
+.text-larger {
+    font-size: larger;
+}

@@ -1,0 +1,22 @@
+details {
+    background: var(--dark);
+    padding: var(--padding);
+    border-radius: var(--border-radius-sm);
+}
+
+details summary h3 {
+    display: inline;
+}
+
+details ul {
+    list-style: circle;
+}
+
+h1 {
+    font-size: xx-large;
+    margin-top: 0;
+}
+
+pre {
+    overflow-x: scroll;
+}

@@ -1,0 +1,40 @@
+@import "theme.scss";
+@import "logo.scss";
+@import "menu.scss";
+@import "layouts.scss";
+@import "buttons.scss";
+@import "layout2.scss";
+@import "main.scss";
+@import "base.scss";
+@import "docs.scss";
+@import "header.scss";
+@import "hero.scss";
+@import "colors.scss";
+@import "forms.scss";
+@import "icons.scss";
+@import "typo.scss";
+@import "utils.scss";
+
+.promopage {
+    strong {
+        font-size: inherit;
+    }
+
+    h2:is([id]) {
+        text-align: center;
+        font-size: clamp(2em, 4.5vw, 3em);
+        padding-top: 1.5em;
+    }
+}
+
+.sameold {
+    font-size: xx-large;
+    text-align: center;
+
+    figure {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+}

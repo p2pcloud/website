@@ -1,0 +1,14 @@
+#logo {
+    display: block;
+    max-width: 15em;
+    min-height: 2.5em;
+    width: clamp(9em, 4.5vw, 15em);
+    background: url("/img/mainpage/logo.svg") no-repeat left center;
+    background-size: contain;
+    color: transparent;
+}
+
+#logo:hover {
+    background: url("/img/mainpage/logo.svg") no-repeat left center;
+    background-size: contain;
+}

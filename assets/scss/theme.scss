@@ -1,0 +1,57 @@
+/* @import './fonts/Exo2.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    /* Base */
+    --viewport: 70em;
+    color-scheme: dark;
+    color: var(--light);
+    background-color: var(--dark);
+    font-family: var(--font);
+
+    /* Font */
+    --font: "Exo 2", sans-serif;
+    --font-size: clamp(0.75em, 4.5vw, 1em);
+    --line-height: 1.5;
+    --gap-lg: 2.5em;
+    --gap: 1.5em;
+    --gap-sm: 0.75em;
+
+    /* Colors */
+    --alfa: 1;
+    --dark: hsla(210, 25%, 5%, var(--alfa));
+    --light: hsla(210, 25%, 90%, var(--alfa));
+    --gray: hsl(210, 25%, 50%);
+    --blue: hsl(210, 73%, 52%);
+    --cyan: hsl(204, 89%, 71%);
+    --magenta: hsl(273, 81%, 63%);
+    --brand: linear-gradient(125deg, var(--blue) 0%, var(--cyan) 25%, var(--magenta) 75%);
+    --brand-radial: radial-gradient(var(--blue) 0%, var(--cyan) 25%, var(--magenta) 75%);
+    --success: hsl(128, 57%, 45%);
+    --warning: hsl(43, 100%, 50%);
+    --error: hsl(22, 100%, 45%);
+
+    /* Layouts */
+    --surface-1: hsl(215, 25%, 10%);
+    --surface-2: hsl(215, 25%, 15%);
+    --surface-3: hsl(215, 25%, 25%);
+    --surface-4: hsl(215, 25%, 35%);
+    --gradient-1: linear-gradient(125deg, transparent 0%, var(--surface-1) 75%);
+    --gradient-2: linear-gradient(125deg, transparent 0%, var(--surface-2) 75%);
+    --gradient-3: linear-gradient(125deg, transparent 0%, var(--surface-3) 75%);
+    --gradient-4: linear-gradient(125deg, transparent 0%, var(--surface-4) 75%);
+    --gradient-brand: linear-gradient(125deg, var(--dark) 0%, var(--surface-1) 75%) padding-box, var(--brand) border-box;
+
+    /* Presets */
+    --border-radius: 1em;
+    --border-radius-sm: 0.75em;
+    --padding-lg: 0.75em 2em;
+    --padding: 0.625em 1.5em;
+    --padding-sm: 0.3125em 0.75em;
+    --border-brand: linear-gradient(var(--dark), var(--dark)) padding-box, var(--brand) border-box;
+    --border-light: linear-gradient(var(--dark), var(--dark)) padding-box, var(--light) border-box;
+    --border-success: linear-gradient(var(--dark), var(--dark)) padding-box, var(--success) border-box;
+    --border-warning: linear-gradient(var(--dark), var(--dark)) padding-box, var(--warning) border-box;
+    --border-error: linear-gradient(var(--dark), var(--dark)) padding-box, var(--error) border-box;
+}

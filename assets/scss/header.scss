@@ -1,0 +1,9 @@
+.header {
+    --viewport: 70em;
+    padding: var(--gap) 0 0;
+    /* align-items: center; */
+}
+
+.header .button {
+    flex: 0;
+}

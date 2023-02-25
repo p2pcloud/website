@@ -1,0 +1,91 @@
+html,
+body {
+    text-rendering: optimizeLegibility;
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+    font-weight: 200;
+    margin: 0;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    // margin-inline: max(0%, 50% - var(--viewport) / 2);
+    margin-inline: 50% - var(--viewport) / 2;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+header {
+    position: relative;
+    /* background: var(--dark); */
+    /* position: sticky; */
+    /* z-index: 100; */
+    /* top: -1.5em; */
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section {
+    margin: var(--gap) 0;
+    position: relative;
+    flex: 1;
+}
+
+article,
+.article {
+    padding: var(--gap);
+    border-radius: 1em;
+}
+
+:is(article, .article).lg {
+    padding: var(--gap-lg);
+}
+
+menu {
+    --gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    --gap: 0.5em;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    max-height: 500px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+figure {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+details summary {
+    cursor: pointer;
+}
