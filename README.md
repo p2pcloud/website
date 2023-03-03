@@ -1,14 +1,22 @@
-# p2pcloud.io website development guide
+## Overview:
+This repository is the root source for [P2P Cloud site](https://p2pcloud.io/). We welcome and encourage everyone in the community to contribute to the site, whether it's missing or outdated content, or UX/UI improvements. 
 
-## Prerequisites
-[Install Hugo](https://gohugo.io/getting-started/installing/)
+## Deployment:
+When contributing, send a PR on the [staging branch](https://github.com/p2pcloud/website/tree/staging), and a core team member will merge into the main branch.   
 
-## Add a new page
-```
-hugo new docs/overview/hello-world.md
-```
+## Installation and Setup
+P2P uses [Hugo](https://gohugo.io/), a static site generator, to build the website.  
 
-## Run the server
+### Quick Start:
+
+1. Install [Hugo](https://gohugo.io/getting-started/installing/)
+
+2. Download the repo:
 ```
+https://github.com/p2pcloud/website.git
+```
+ 3. Start server:
+ ```
+cd website 
 hugo server
 ```
