@@ -1,3 +1,5 @@
+![logo](./static/img/mainpage/logo.svg)
+
 ## Overview:
 This repository is the root source for [P2P Cloud site](https://p2pcloud.io/). We welcome and encourage everyone in the community to contribute to the site, whether it's missing or outdated content, or UX/UI improvements. 
 
