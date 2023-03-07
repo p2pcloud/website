@@ -4,21 +4,23 @@
 {{ define "main" -}}
 {{ .Content }}
 
-<ul>
-    {{ range .Pages  }}
+<div class="container docs">
+    <ul>
+        {{ range .Pages }}
         <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ .Title }}
         </li>
         {{ if .Pages }}
-            <ul>
-            {{ range .Pages  }}
-                <li>
+        <ul>
+            {{ range .Pages }}
+            <li>
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </li>
+            </li>
             {{ end }}
-            </ul>
+        </ul>
         {{ end }}
-    {{ end }}
-</ul>
+        {{ end }}
+    </ul>
+</div>
 
 {{- end }}
