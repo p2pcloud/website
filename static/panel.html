@@ -8,7 +8,7 @@
     <title>Redirect...</title>
 </head>
 
-<a id="fallbackLink" href="https://app.p2pcloud.io">https://app.p2pcloud.io</a>
+Click here: <a id="fallbackLink" href="https://app.p2pcloud.io">https://app.p2pcloud.io</a>
 
 <body>
 
@@ -22,7 +22,7 @@
         if (window.location.hash) {
             url += window.location.hash
         }
-        // window.location.href = url
+        window.location.href = url
 
         //set href of the link to the url
         document.getElementById("fallbackLink").setAttribute("href", url)
@@ -30,7 +30,7 @@
 
         // Fallback in case the script is not executed
         setTimeout(() => {
-            // document.getElementById("fallbackLink").click()
+            document.getElementById("fallbackLink").click()
         }, 1000)
     </script>
 </body>
