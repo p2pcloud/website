@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect...</title>
+</head>
+
+<a id="fallbackLink" href="https://app.p2pcloud.io">https://app.p2pcloud.io</a>
+
+<body>
+
+
+    <script>
+        let url = "https://app.p2pcloud.io/"
+        if (window.location.hostname.startsWith("staging.")) {
+            url = "https://staging.app.p2pcloud.io/"
+        }
+
+        if (window.location.hash) {
+            url += window.location.hash
+        }
+        // window.location.href = url
+
+        //set href of the link to the url
+        document.getElementById("fallbackLink").setAttribute("href", url)
+        document.getElementById("fallbackLink").innerText = url
+
+        // Fallback in case the script is not executed
+        setTimeout(() => {
+            // document.getElementById("fallbackLink").click()
+        }, 1000)
+    </script>
+</body>
+
+</html>
