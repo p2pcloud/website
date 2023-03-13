@@ -5,7 +5,7 @@ weight: 3010
 ---
 ### Introduction
 
-Most cloud providers are controlled by large corporations like Amazon, Microsoft, and Google, which can make it difficult for smaller server owners to compare prices and verify security. P2P Cloud is a new cloud provider offering a trustless open market for users and server providers who need dedicated hardware for their day-to-day operations.
+Most cloud providers are controlled by large corporations like Amazon, Microsoft, and Google, which can make it difficult for smaller server owners to compare prices and verify security. P2P Cloud is a trustless open market for users and server providers who need dedicated hardware for their day-to-day operations.
 
 ### What Makes P2P Unique?
 
