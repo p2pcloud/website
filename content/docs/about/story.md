@@ -1,6 +1,7 @@
 ---
 title: "Idea of p2pcloud"
 description: "Idea of p2pcloud"
+draft: true
 weight: 3030
 ---
 
