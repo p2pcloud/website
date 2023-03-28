@@ -1,4 +1,4 @@
 ---
-title: "About Us"
+title: "Blog"
 weight: 3000
 ---

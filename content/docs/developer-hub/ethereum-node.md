@@ -1,12 +1,12 @@
 ---
-title: "Running Ethereum node"
+title: "Running Ethereum Node"
 description: "How to run an Ethereum node on a distributed cloud."
 weight: 2010
 ---
 
 ## 1. Book a VM and SSH into it
 
-As described in [Buy and launch a VM](/docs/overview/getting-started) guide
+As described in [Buy and launch a VM](/docs/developer-hub/developer-quick-start/) guide
 
 ## 2. Install docker
 ```bash
