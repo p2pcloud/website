@@ -27,7 +27,7 @@ P2P Cloud is versatile and can be used for a variety of purposes for individuals
 > -   Hosting their project's database, whether  MongoDB, SQL, or other databases, with options such as Heroku's managed database services.
 
 ### Get Started
-If you're looking for a cloud provider that offers security, autonomy, and flexibility, P2P Cloud is a great option. Check out our [Getting Started page](/docs/overview/getting-started/) to learn how to access the marketplace and select a node provider.
+If you're looking for a cloud provider that offers security, autonomy, and flexibility, P2P Cloud is a great option. Check out our [Getting Started page](/docs/developer-hub/developer-quick-start/) to learn how to access the marketplace and select a node provider.
 
 ### Become a Server Provider
 
