@@ -53,10 +53,10 @@ samp {
 /* Lists */
 ul,
 ol {
-    margin: 0;
+    /*margin: 0;
     padding: 0;
     list-style: none;
-    counter-reset: orderedlist;
+    counter-reset: orderedlist;*/
 }
 
 :is(ul, ol) li {
