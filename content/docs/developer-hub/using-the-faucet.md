@@ -15,12 +15,12 @@ You will need a [Metamask wallet](https://metamask.io/) and add both Avalance ma
 ### Using the Faucet:
 
 Operating the faucet is simple. After you have Metamask installed and both networks added, all you will need to do is:
-> * Change your Metamask network to Avalance Fuji
-> * Copy your wallet’s address 
-> * Access our bot via [Telegram](https://t.me/p2pcloud_trial_bot) 
-> * Type: ```/start```  
-> * Paste your wallet’s address
-> * Wait for the TX confirmation
+* Change your Metamask network to Avalance Fuji
+* Copy your wallet’s address 
+* Access our bot via [Telegram](https://t.me/p2pcloud_trial_bot) 
+* Type: ```/start```  
+* Paste your wallet’s address
+* Wait for the TX confirmation
 
 **The faucet only sends five tokens at a time, so you may have to request it multiple times based on the servers listed in the [VM marketplace](https://app.p2pcloud.io/vms/new).**
 
