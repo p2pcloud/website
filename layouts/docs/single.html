@@ -1,57 +1,46 @@
 {{ define "main" }}
+<main>
+    <section class="docs">
+        <div class="container docs__container">
 
-<main class="columns container">
-    <aside>
-        <nav>
-            {{ range .Parent.Parent.Pages }}
-            {{ if .Pages }}
-            <details>
-                <summary>
-                    <h4>{{ .Title }}</h4>
-                </summary>
-                <ul>
-                    {{ range .Pages }}
-                    <li>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                    {{ end }}
+            <nav class="docs__container-nav">
+                <ul class="docs__container-nav__list">
+                    <li class="docs__container-nav__list-item">Overview</li>
+                    <li class="docs__container-nav__list-item active-menu"><a class="docs__container-nav__list-item-link" href="#">Getting Started</a></li>
+                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Overcoming NAT</a></li>
+                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-link" href="#">Terms and Concepts</a></li>
                 </ul>
-            </details>
-            {{ end }}
-            {{ end }}
-        </nav>
-    </aside>
+                <ul class="docs__container-nav__list">
+                    <li class="docs__container-nav__list-item">Examples</li>
+                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="./textstyle.html">Running Ethereum node</a></li>
+                </ul>
+                <ul class="docs__container-nav__list">
+                    <li class="docs__container-nav__list-item">About P2P Cloud</li>
+                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">About Us</a></li>
+                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Known limitations</a></li>
+                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Roadmap</a></li>
+                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Idea of p2pcloud</a></li>
+                </ul>
+            </nav>
+            <div class="docs__container-main">
 
-    <section>
-        <article class="surface-1">
-            <h1>{{ .Title }}</h1>
-            {{ .Content }}
+                <h1>{{ .Title }}</h1>
 
-            {{ if or .Prev .Next -}}
-            <div id="nextprev">
-                {{- with .Next }}
-                <a href="{{ .RelPermalink}}">
-                    <div id="prevart">Previous:<br>{{.Title}}</div>
-                </a>
-                {{ end -}}
-                {{- with .Prev -}}
-                <a href="{{ .RelPermalink}}">
-                    <div id="nextart">Next:<br>{{.Title}}</div>
-                </a>
-                {{ end -}}
+                {{ .Content }}
+
+                <button class="docs__container-main__btn">
+                    Overcoming NAT
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="11" width="20" height="2" />
+                        <rect x="15.2285" y="4.22168" width="11" height="2" transform="rotate(45 15.2285 4.22168)" />
+                        <rect x="13.8145" y="18.3638" width="11" height="2" transform="rotate(-45 13.8145 18.3638)" />
+                    </svg>
+                </button>
+
+
             </div>
-            {{ end -}}
-        </article>
-        <!-- <section id="main">
-            <h1 id="title">{{ .Title }}</h1>
-            <div>
-                <article id="content">
-                    {{ .Content }}
-                </article>
-            </div>
-        </section>
-       -->
 
+        </div>
     </section>
 </main>
 {{ end }}
