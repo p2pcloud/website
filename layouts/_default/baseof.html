@@ -133,23 +133,18 @@
         <div class="container">
             <div class="footer__content">
                 <nav class="footer__content-nav">
+                    {{ range .Site.Sections }}
+                    {{ range .Pages }}
                     <ul class="footer__content-nav__list">
-                        Overview
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">Getting Started</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">Overcoming NAT</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">Terms and Concepts</a></li>
+                        {{.LinkTitle}}
+                        {{ range .Pages }}
+                        <li class="footer__content-nav__list-item">
+                            <a class="footer__content-nav__list-item__link" href="{{.RelPermalink}}">{{.LinkTitle}}</a>
+                        </li>
+                        {{ end }}
                     </ul>
-                    <ul class="footer__content-nav__list">
-                        Examples
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">Running Ethereum node</a></li>
-                    </ul>
-                    <ul class="footer__content-nav__list">
-                        About P2P Cloud
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">About Us</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">Known limitations</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">Roadmap</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="/#">Idea of p2pcloud</a></li>
-                    </ul>
+                    {{ end }}
+                    {{ end }}
                 </nav>
                 <div class="footer__content-menu">
                     <ul class="footer__content-menu__list">
