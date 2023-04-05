@@ -1,7 +1,7 @@
 ---
 title: "Known limitations"
 description: "Known limitations of p2pcloud - distributed virtual machine hosting on avalanche blockchain"
-weight: 3010
+weight: 2030
 ---
 
 ## Current state of the project

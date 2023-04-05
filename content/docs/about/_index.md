@@ -1,4 +1,4 @@
 ---
 title: "About Us"
-weight: 3000
+weight: 2000
 ---
