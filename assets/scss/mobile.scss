@@ -1,7 +1,7 @@
 @import './variables/variables';
 
 @media screen and (max-width: 1170px) {
-    .started {
+    .docs {
         &__container {
             grid-template-columns: 205px 1fr;
             gap: 20px;
@@ -20,9 +20,9 @@
 
             display: grid;
             grid-template-columns: 80px 1fr;
-            grid-template-areas: 
-            "img title"
-            "img desc";
+            grid-template-areas:
+                "img title"
+                "img desc";
             gap: 8px 20px;
 
             & img {
@@ -183,7 +183,7 @@
         }
     }
 
-    .started {
+    .docs {
         &__container {
             grid-template-columns: 1fr;
 
@@ -424,7 +424,7 @@
         }
     }
 
-    
+
 
     .footer__copy {
 
@@ -437,7 +437,7 @@
         }
     }
 
-    .started {
+    .docs {
         &__container {
             &-main {
                 gap: 30px;
@@ -533,10 +533,10 @@
         &__card {
             grid-template-columns: 1fr;
             gap: 0;
-            grid-template-areas: 
-            "img"
-            "title"
-            "desc";
+            grid-template-areas:
+                "img"
+                "title"
+                "desc";
 
             & img {
                 width: 60px;

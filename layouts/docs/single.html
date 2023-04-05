@@ -4,23 +4,26 @@
         <div class="container docs__container">
 
             <nav class="docs__container-nav">
+                {{ $current := . }}
+
+                {{ range .Parent.Parent.Pages }}
+                {{ if .Pages }}
                 <ul class="docs__container-nav__list">
-                    <li class="docs__container-nav__list-item">Overview</li>
-                    <li class="docs__container-nav__list-item active-menu"><a class="docs__container-nav__list-item-link" href="#">Getting Started</a></li>
-                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Overcoming NAT</a></li>
-                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-link" href="#">Terms and Concepts</a></li>
+                    <li class="docs__container-nav__list-item">{{ .Title }}</li>
+                    {{ range .Pages }}
+
+                    {{$activeClass := ""}}
+                    {{ if .RelPermalink | strings.HasPrefix $current.RelPermalink }}
+                    {{ $activeClass = "active-menu" }}
+                    {{ end }}
+
+                    <li class="docs__container-nav__list-item {{$activeClass}}">
+                        <a class="docs__container-nav__list-item-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
                 </ul>
-                <ul class="docs__container-nav__list">
-                    <li class="docs__container-nav__list-item">Examples</li>
-                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="./textstyle.html">Running Ethereum node</a></li>
-                </ul>
-                <ul class="docs__container-nav__list">
-                    <li class="docs__container-nav__list-item">About P2P Cloud</li>
-                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">About Us</a></li>
-                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Known limitations</a></li>
-                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Roadmap</a></li>
-                    <li class="docs__container-nav__list-item"><a class="docs__container-nav__list-item-link" href="#">Idea of p2pcloud</a></li>
-                </ul>
+                {{ end }}
+                {{ end }}
             </nav>
             <div class="docs__container-main">
 
@@ -28,14 +31,36 @@
 
                 {{ .Content }}
 
-                <button class="docs__container-main__btn">
-                    Overcoming NAT
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="11" width="20" height="2" />
-                        <rect x="15.2285" y="4.22168" width="11" height="2" transform="rotate(45 15.2285 4.22168)" />
-                        <rect x="13.8145" y="18.3638" width="11" height="2" transform="rotate(-45 13.8145 18.3638)" />
-                    </svg>
-                </button>
+
+                {{ if or .Prev .Next -}}
+                <div class="docs__container-main__buttons">
+                    {{- with .Next }}
+                    <a href="{{ .RelPermalink}}">
+                        <button>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="23" y="13" width="20" height="2" transform="rotate(-180 23 13)" />
+                                <rect x="8.77148" y="19.7783" width="11" height="2" transform="rotate(-135 8.77148 19.7783)" />
+                                <rect x="10.1855" y="5.63623" width="11" height="2" transform="rotate(135 10.1855 5.63623)" />
+                            </svg>
+                        </button>
+                    </a>
+                    {{ end -}}
+                    {{- with .Prev -}}
+                    <a href="{{ .RelPermalink}}">
+                        <button>
+                            {{.Title}}
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1" y="11" width="20" height="2" />
+                                <rect x="15.2285" y="4.22168" width="11" height="2" transform="rotate(45 15.2285 4.22168)" />
+                                <rect x="13.8145" y="18.3638" width="11" height="2" transform="rotate(-45 13.8145 18.3638)" />
+                            </svg>
+                        </button>
+                    </a>
+
+
+                    {{ end -}}
+                </div>
+                {{ end -}}
 
 
             </div>
