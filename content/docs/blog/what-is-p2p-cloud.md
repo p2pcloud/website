@@ -7,7 +7,7 @@ weight: 3010
 ### What is P2P Cloud?
 P2P Cloud is a decentralized marketplace alternative that connects individuals, startups, small-medium businesses, and web3 node operators to providers offering Virtual Private Server (VPS) services, granting flexibility, security, uptime, and autonomy.
 
-Currently, ~67% of websites and apps are deployed or held on just three cloud providers: AWS, Azure, and Google Cloud. This poses a risk for both individuals in Web2 and Web3, including censorship, outages, and the high cost of hardware needed to meet demand.
+Currently, most of websites and apps are deployed or held on just three cloud providers: AWS, Azure, and Google Cloud. This poses a risk for both individuals in Web2 and Web3, including censorship, outages, and the high cost of hardware needed to meet demand.
 
 P2P Cloud offers a secure, decentralized alternative to centralized cloud providers that is cost-efficient for any client, while enabling the healthy functioning of the internet ecosystem. Allowing individuals to lease out unused hardware having AMD EPYC processors, P2P Cloud created a decentralized infrastructure marketplace connecting individuals to providers worldwide, reducing the risk of censorship, security breaches, and regional outages.
 
