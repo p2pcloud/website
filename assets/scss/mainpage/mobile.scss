@@ -1,13 +1,6 @@
 @import './variables/variables';
 
-@media screen and (max-width: 1170px) {
-    .docs {
-        &__container {
-            grid-template-columns: 205px 1fr;
-            gap: 20px;
-        }
-    }
-}
+
 
 @media screen and (max-width: 1087px) {
     .values__container-cards {
@@ -116,45 +109,9 @@
             }
         }
     }
-
-    .footer__content-menu__social {
-        justify-content: flex-start;
-    }
-
-    .footer__content {
-        flex-flow: column-reverse wrap;
-        justify-content: flex-start;
-        gap: 30px;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .header {
-
-        &__container {
-            &-nav {
-                display: none;
-            }
-
-            &-menu {
-                display: block;
-
-                position: fixed;
-                right: 15px;
-                top: 40px;
-            }
-        }
-    }
-
-    .menu {
-        overflow-y: scroll;
-        height: 100%;
-
-
-        &__nav {
-            width: 50%;
-        }
-    }
 
     .changing {
         &__container {
@@ -183,16 +140,6 @@
         }
     }
 
-    .docs {
-        &__container {
-            grid-template-columns: 1fr;
-
-            &-nav {
-                display: none;
-            }
-        }
-    }
-
     .seconds {
 
 
@@ -210,31 +157,6 @@
 
 
 }
-
-
-@media screen and (max-width: 650px) {
-    .footer__content {
-
-
-        &-nav {
-            flex-direction: column;
-            gap: 40px;
-        }
-    }
-
-    .footer__copy {
-        flex-direction: column;
-    }
-
-    .menu {
-
-
-        &__nav {
-            width: 80%;
-        }
-    }
-}
-
 
 
 @media screen and (max-width: 480px) {
@@ -261,13 +183,6 @@
         }
 
     }
-
-
-
-    .header {
-        margin-bottom: 30px;
-    }
-
 
     .hero {
 
@@ -306,14 +221,6 @@
             }
         }
     }
-
-
-    .menu {
-        &__nav {
-            width: 100%;
-        }
-    }
-
 
     .seconds {
         margin-top: 60px;
@@ -420,82 +327,6 @@
 
                 padding: 10px;
                 height: calc(100% - 2px);
-            }
-        }
-    }
-
-
-
-    .footer__copy {
-
-        & p {
-            padding-bottom: 20px;
-        }
-
-        &-list {
-            flex-direction: column;
-        }
-    }
-
-    .docs {
-        &__container {
-            &-main {
-                gap: 30px;
-
-                &__block {
-                    &-list {
-                        &__item {
-                            font-size: 16px;
-                            line-height: 21px;
-
-                            &-two {
-                                font-size: 16px;
-                                line-height: 21px;
-                            }
-                        }
-                    }
-                }
-
-                & {
-                    &__instruction {
-                        gap: 5px;
-
-                        & p {
-                            line-height: 45px;
-                            font-size: 16px;
-                        }
-
-                        & h3 {
-                            font-size: 22px;
-                        }
-                    }
-                }
-
-                &__block {
-
-
-                    & p {
-                        font-size: 16px;
-                        line-height: 21px;
-                    }
-
-                    & h1 {
-                        font-size: 34px;
-                        line-height: 45px;
-                        margin-bottom: 0;
-                    }
-
-                    & h2 {
-                        font-size: 30px;
-                        line-height: 28px;
-                        margin-bottom: 0;
-                    }
-
-                    & h3 {
-                        font-size: 22px;
-                        margin-bottom: 0;
-                    }
-                }
             }
         }
     }

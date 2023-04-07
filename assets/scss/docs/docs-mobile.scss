@@ -1,0 +1,123 @@
+@media screen and (max-width: 1170px) {
+    .docs {
+        &__container {
+            grid-template-columns: 205px 1fr;
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .docs {
+        &__container {
+            grid-template-columns: 1fr;
+
+            &-main {
+                gap: 0;
+            }
+
+            &-nav {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .highlight {
+        margin: 10px 0;
+    }
+
+    .docs {
+        &__container {
+            &-main {
+
+                &__buttons {
+                    margin-top: 20px;
+                }
+
+                & p {
+                    font-size: 16px;
+                    line-height: 21px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                & pre {
+                    margin: 10px 0;
+                }
+
+                & h2 {
+                    margin: 10px 0;
+                }
+
+                & h3 {
+                    margin: 10px 0;
+                }
+                & ul {
+                    margin-left: 12px;
+                }
+
+                & blockquote {
+                    margin: 10px 0;
+                }
+
+                &__block {
+                    &-list {
+                        &__item {
+                            font-size: 16px;
+                            line-height: 21px;
+
+                            &-two {
+                                font-size: 16px;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+
+                & {
+                    &__instruction {
+                        gap: 5px;
+
+                        & p {
+                            line-height: 45px;
+                            font-size: 16px;
+                        }
+
+                        & h3 {
+                            font-size: 22px;
+                        }
+                    }
+                }
+
+                &__block {
+
+
+                    & p {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+
+                    & h1 {
+                        font-size: 34px;
+                        line-height: 45px;
+                        margin-bottom: 0;
+                    }
+
+                    & h2 {
+                        font-size: 30px;
+                        line-height: 28px;
+                        margin-bottom: 0;
+                    }
+
+                    & h3 {
+                        font-size: 22px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

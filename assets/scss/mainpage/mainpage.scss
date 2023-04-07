@@ -2,39 +2,6 @@
 @import './UI/ui-kit';
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: $white;
-}
-
-body,
-html {
-    background: $black-light;
-    // font-family: 'Segoe UI', 'Roboto', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    position: relative;
-    z-index: -2;
-    overflow-x: hidden;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    background: none;
-    border: none;
-}
-
 .container {
     max-width: 1140px;
     padding: 0 10px;
@@ -332,7 +299,8 @@ button {
 
 
 .hero {
-    height: calc(100vh - 81px);
+    min-height: calc(100vh - 81px);
+    height: 100%;
 
     &__container {
         display: flex;
@@ -831,122 +799,7 @@ button {
 }
 
 
-.footer {
-    background: $black;
-}
 
-.footer__content {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
-
-    &-menu {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-
-        &__social {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 32px;
-
-            & svg {
-                cursor: pointer;
-                -webkit-transition: all .3s linear;
-                transition: all .3s linear;
-
-                &:hover {
-                    fill: $blue;
-                }
-            }
-        }
-
-        &__list {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-            margin-bottom: 10px;
-
-            &-item {
-
-
-                &__link {
-                    font-weight: $regular;
-                    font-size: $size18;
-                    line-height: 24px;
-
-                    &:hover {
-                        color: $gray-dark2;
-                    }
-                }
-            }
-        }
-    }
-
-    &-nav {
-        display: flex;
-        gap: 70px;
-
-        &__list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            font-weight: $bold;
-            font-size: $size18;
-            line-height: 24px;
-            text-transform: uppercase;
-
-            &-item {
-                font-weight: $regular;
-                font-size: 16px;
-                line-height: 21px;
-                text-transform: none;
-
-                &__link {
-                    color: $white-light;
-
-                    &:hover {
-                        color: $gray-dark2;
-                    }
-                }
-            }
-        }
-    }
-}
-
-.footer__copy {
-    padding: 24px 0 33px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: $regular;
-    font-size: 16px;
-    line-height: 21px;
-
-    &>p {
-        opacity: .8;
-    }
-
-    &-list {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-
-        &__item {
-
-            &-link {
-                text-decoration: underline;
-                opacity: .8;
-
-                &:hover {
-                    opacity: .7;
-                }
-            }
-        }
-    }
-}
 
 .border-desc {
     padding: 7px 0 9px 24px;

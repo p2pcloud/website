@@ -1,0 +1,29 @@
+@media screen and (max-width: 1024px) {
+
+    .footer__content-menu__social {
+        justify-content: flex-start;
+    }
+
+    .footer__content {
+        flex-flow: column-reverse wrap;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .footer__content {
+
+
+        &-nav {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    .footer__copy {
+        flex-direction: column;
+    }
+}

@@ -5,6 +5,22 @@
     padding-bottom: 25px;
 }
 
+pre {
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.highlight {
+    max-width: 100%;
+    overflow-x: scroll;
+    width: 100%;
+
+    & pre {
+        padding: 10px;
+        border-radius: 12px;
+    }
+}
+
 .docs {
     margin-bottom: 140px;
 
@@ -14,11 +30,79 @@
         align-items: flex-start;
         gap: 60px;
 
+        
+
 
         &-main {
             display: grid;
             justify-items: flex-start;
-            gap: 50px;
+            // gap: 16px;
+            max-width: 100%;
+
+            &__buttons {
+                margin-top: 30px;
+            }
+
+            & ul {
+                list-style: disc;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            & h1 {
+                font-weight: bold;
+                font-size: 44px;
+                line-height: 59px;
+                margin-bottom: 34px;
+            }
+
+            & p {
+                max-width: 100%;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                margin: 0;
+
+                & a {
+                    color: $white;
+                    -webkit-transition: all .3s linear;
+                    transition: all .3s linear;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: $blue-light;
+                    }
+                }
+
+                & img {
+                    display: inline-block;
+                }
+            }
+
+            & pre {
+                overflow-x: scroll;
+                max-width: 100%;
+            }
+
+            & blockquote {
+                border-left: 4px solid $violet;
+                padding: 7px 0 9px 28px;
+                margin: 0;
+            }
+
+            & img {
+                max-width: 100%;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+
+            & h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 8px;
+            }
 
             &__btn {
                 display: flex;
@@ -134,6 +218,7 @@
             gap: 25px;
 
             &__list {
+                
 
                 &-item:not(:nth-child(1)) {
                     padding: 10px 16px;
@@ -163,3 +248,5 @@
         }
     }
 }
+
+@import "./docs-mobile.scss";

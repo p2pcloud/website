@@ -1,0 +1,196 @@
+.container {
+    max-width: 1140px;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.border__btn {
+    width: 100%;
+    height: 100%;
+    padding: 1px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+.header__container-nav__btn:hover::after {
+    transform: rotate(180deg);
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+
+
+/*****INDEX**********/
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid $gray-light;
+    margin-bottom: 60px;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-menu {
+            display: none;
+            width: 35px;
+            height: 20px;
+            position: relative;
+            cursor: pointer;
+            z-index: 5;
+
+            &__burger {
+                display: block;
+                width: 100%;
+                height: 3px;
+                background: $gradient;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 3px;
+                    background: $gradient;
+                    position: absolute;
+                    top: -10px;
+                    left: 0;
+                    cursor: pointer;
+                }
+
+
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 3px;
+                    background: $gradient;
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+
+                }
+            }
+        }
+
+        &-logo {
+            padding: 16px 0;
+        }
+
+        &-nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin: 0;
+
+
+
+            &__btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2px;
+                border-radius: 12px;
+                background: $black-light;
+                z-index: 0;
+                width: 77px;
+                height: 44px;
+                overflow: hidden;
+                position: relative;
+                flex-shrink: 0;
+
+                &:hover {
+                    padding: 3px;
+                }
+
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -20px;
+                    left: -20px;
+                    bottom: -20px;
+                    right: -20px;
+                    -webkit-transition: all 1s linear;
+                    transition: all 1s linear;
+
+                    background: linear-gradient(289.39deg, #EE82EE 20%, #28A1E6 100.04%);
+                }
+
+
+                &-button {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px 22px 12px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    background: $black-light;
+                    z-index: 1;
+                    font-size: $size18;
+                    font-weight: $regular;
+                    cursor: pointer;
+                }
+
+            }
+
+            &__social {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+
+                &-icon {
+
+
+                    &:hover svg {
+                        -webkit-transition: all .3s linear;
+                        transition: all .3s linear;
+                        fill: $blue;
+                    }
+                }
+            }
+
+            &__border {
+                height: 40px;
+                width: 1px;
+                background: $white;
+                opacity: .2;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                font-weight: $regular;
+                font-size: $size18;
+                line-height: 24px;
+                color: $white;
+                list-style: none;
+
+                &-item {
+                    padding: 26px 0;
+                    cursor: pointer;
+
+                    &__link {
+                        color: $white;
+                        text-decoration: none;
+                    }
+
+                    &:hover &__link {
+                        -webkit-transition: all .3s linear;
+                        transition: all .3s linear;
+                        color: $violet;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+@import "./header-mobile.scss";
