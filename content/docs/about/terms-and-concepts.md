@@ -1,7 +1,7 @@
 ---
 title: "Terms and Concepts"
 description: "List of definitions and terms"
-weight: 1020
+weight: 2010
 ---
 ### Hosting Provider:
 A hosting provider, also known as a server provider, is an individual(s) that offers hosting services for websites, applications, and other online services.

@@ -1,7 +1,7 @@
 ---
 title: "About Us"
 description: "Learn about P2P Cloud and what make it unique"
-weight: 3010
+weight: 2020
 ---
 ### Introduction
 

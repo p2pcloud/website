@@ -1,7 +1,7 @@
 ---
 title: "Roadmap"
 description: "Roadmap of p2pcloud - distributed cloud web services"
-weight: 3020
+weight: 2040
 ---
 
 Last updated: October 2022

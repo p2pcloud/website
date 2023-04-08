@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+    .header {
+
+        &__container {
+            &-nav {
+                display: none;
+            }
+
+            &-menu {
+                display: block;
+
+                position: fixed;
+                right: 15px;
+                top: 40px;
+            }
+        }
+    }
+
+    .menu {
+        overflow-y: scroll;
+        height: 100%;
+
+
+        &__nav {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+        .menu {
+
+
+        &__nav {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        &__nav {
+            width: 100%;
+        }
+    }
+}

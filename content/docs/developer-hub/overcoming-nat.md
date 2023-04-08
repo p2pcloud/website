@@ -1,7 +1,7 @@
 ---
 title: "Overcoming NAT"
 description: "How to run an Ethereum node on a distributed cloud."
-weight: 1020
+weight: 1030
 ---
 
 ## Do I need this?
