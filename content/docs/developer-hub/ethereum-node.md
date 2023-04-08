@@ -1,7 +1,7 @@
 ---
 title: "Running Ethereum Node"
 description: "How to run an Ethereum node on a distributed cloud."
-weight: 2010
+weight: 1040
 ---
 
 ## 1. Book a VM and SSH into it
