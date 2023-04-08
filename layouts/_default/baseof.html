@@ -84,27 +84,24 @@
                     <button class="close"></button>
                     <ul class="menu__nav-list">
                         <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="/">Main</a></li>
-                        <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="./docs.html">Docs</a></li>
-                        <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="#">Github</a></li>
+                        <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="/docs/developer-hub/developer-quick-start/">Docs</a></li>
+                        <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="https://github.com/p2pcloud/website" target="_blank">Github</a></li>
                     </ul>
 
+                    {{ range .Site.Sections }}
+                    {{ range .Pages }}
                     <ul class="footer__content-nav__list">
-                        Overview
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="./docs.html">Getting Started</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="#">Overcoming NAT</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="#">Terms and Concepts</a></li>
+                        {{.LinkTitle}}
+                        {{ range .Pages }}
+                        <li class="footer__content-nav__list-item">
+                            <a class="footer__content-nav__list-item__link" href="{{.RelPermalink}}">{{.LinkTitle}}</a>
+                        </li>
+
+                        {{ end }}
                     </ul>
-                    <ul class="footer__content-nav__list">
-                        Examples
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="./textstyle.html">Running Ethereum node</a></li>
-                    </ul>
-                    <ul class="footer__content-nav__list">
-                        About P2P Cloud
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="#">About Us</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="#">Known limitations</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="#">Roadmap</a></li>
-                        <li class="footer__content-nav__list-item"><a class="footer__content-nav__list-item__link" href="#">Idea of p2pcloud</a></li>
-                    </ul>
+                    {{ end }}
+                    {{ end }}
+
 
                     <div class="menu__nav-social">
                         <a class="header__container-nav__social-icon" href="#">
