@@ -480,16 +480,6 @@
             z-index: 0;
             position: relative;
             border: none;
-
-            // & iframe {
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     bottom: 0;
-            //     right: 0;
-            //     height: 100%;
-            //     width: 100%;
-            // }
         }
 
         &-title {
@@ -662,6 +652,7 @@
                 background: $black;
                 border-radius: 12px;
                 padding: 30px;
+
 
                 & p:nth-child(2) {
                     font-weight: $bold;

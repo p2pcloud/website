@@ -30,13 +30,13 @@ pre {
         align-items: flex-start;
         gap: 60px;
 
-        
+
 
 
         &-main {
             display: grid;
             justify-items: flex-start;
-            // gap: 16px;
+            gap: 0;
             max-width: 100%;
 
             &__buttons {
@@ -54,7 +54,7 @@ pre {
                 font-weight: bold;
                 font-size: 44px;
                 line-height: 59px;
-                margin-bottom: 34px;
+                margin-bottom: 50px;
             }
 
             & p {
@@ -63,6 +63,7 @@ pre {
                 font-size: 18px;
                 line-height: 25px;
                 margin: 0;
+                margin-bottom: 16px;
 
                 & a {
                     color: $white;
@@ -85,23 +86,38 @@ pre {
                 max-width: 100%;
             }
 
+            & blockquote p {
+                margin: 0;
+            }
+
+            & blockquote ul {
+                padding-left: 0;
+            }
+
             & blockquote {
                 border-left: 4px solid $violet;
-                padding: 7px 0 9px 28px;
-                margin: 0;
+                padding: 0 0 0 28px;
+                margin: 7px 0 9px 0;
+                margin-bottom: 16px;
             }
 
             & img {
                 max-width: 100%;
                 margin-top: 8px;
-                margin-bottom: 8px;
+                margin-bottom: 32px;
+            }
+
+            & h2 {
+                margin-top: 24px;
+                margin-bottom: 24px;
             }
 
             & h3 {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 32px;
-                margin-bottom: 8px;
+                margin-bottom: 24px;
+                margin-top: 40px;
             }
 
             &__btn {
@@ -171,11 +187,8 @@ pre {
 
                 &-img {
                     width: 100%;
-                    margin-bottom: 16px;
-                }
-
-                &-img:last-child {
-                    margin-bottom: 0;
+                    margin-top: 24px;
+                    margin-bottom: 32px;
                 }
 
                 &-title {
@@ -218,7 +231,7 @@ pre {
             gap: 25px;
 
             &__list {
-                
+
 
                 &-item:not(:nth-child(1)) {
                     padding: 10px 16px;

@@ -2,28 +2,22 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     color: $white;
 }
 
 body,
 html {
     background: $black-light;
-    // font-family: 'Segoe UI', 'Roboto', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     position: relative;
     z-index: -2;
     overflow-x: hidden;
+    margin: 0;
 }
 
 ul {
     list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 button {
@@ -72,7 +66,6 @@ button {
   
   h1 {
     font-size: 2em;
-    margin: 0.67em 0;
   }
   
   /* Grouping content
@@ -108,6 +101,7 @@ button {
   
   a {
     background-color: transparent;
+    text-decoration: none;
   }
   
   /**
@@ -381,4 +375,17 @@ button {
   
   [hidden] {
     display: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
   }
