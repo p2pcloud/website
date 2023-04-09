@@ -8,7 +8,10 @@ This document describes how to use the user startup script feature in the P2P Cl
 
 ## Script Location and Execution
 
-The user startup script will be placed in the following path: `/opt/p2pcloud/user_startup.sh`
+The user startup script will be placed in the following path: 
+```
+/opt/p2pcloud/user_startup.sh
+```
 
 The script will be executed only once on the first boot of the VM. It will be run as the `root` user from the `/` directory. Keep in mind that by default, you will SSH into the VM as the `cloud` user, so please be mindful of that.
 
@@ -26,7 +29,7 @@ When you SSH into the VM, the script might still be running. Be aware of this wh
 
 Here is an example script that installs Docker and runs a container on the VM:
 
-``````bash
+```bash
 #!/bin/bash
 set -ex
 export DEBIAN_FRONTEND=noninteractive
