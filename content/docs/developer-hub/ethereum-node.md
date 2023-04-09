@@ -28,7 +28,7 @@ export FORWARDED_PORT_3="50435"
 # 4. Launch a node
 
 ```bash
-cat &lt;&lt;EOT &gt;&gt; docker-compose.yml
+cat <<EOT >> docker-compose.yml
 version: "3.8"
 
 services:
