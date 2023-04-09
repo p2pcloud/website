@@ -19,7 +19,11 @@ The script will be executed only once on the first boot of the VM. It will be ru
 
 The output of the script will be logged to the following file: `/opt/p2pcloud/user_startup.log`
 
-You can check this log file to monitor the progress and troubleshoot any issues with the script. `cat /opt/p2pcloud/user_startup.log` would work for this.
+You can check this log file to monitor the progress and troubleshoot any issues with the script. 
+```bash
+cat /opt/p2pcloud/user_startup.log
+````
+would work for this.
 
 ## Running Scripts in the Background
 
