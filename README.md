@@ -15,7 +15,7 @@ P2P uses [Hugo](https://gohugo.io/), a static site generator, to build the websi
 
 2. Download the repo:
 ```
-https://github.com/p2pcloud/website.git
+git clone git@github.com:p2pcloud/website.git
 ```
  3. Start server:
  ```
