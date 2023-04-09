@@ -4,8 +4,6 @@ description: "How to inject a startup bash or shell script into your decentraliz
 weight: 1050
 ---
 
-# P2P Cloud User Startup Script Documentation
-
 This document describes how to use the user startup script feature in the P2P Cloud project. This feature allows you to inject a script that will be executed on the first boot of a virtual machine (VM) to perform custom tasks such as installing software or configuring the system.
 
 ## Script Location and Execution
