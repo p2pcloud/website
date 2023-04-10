@@ -10,18 +10,23 @@
             width: 100%;
             height: 100%;
             padding: 32px 32px 40px 32px;
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
 
-            display: grid;
-            grid-template-columns: 80px 1fr;
-            grid-template-areas:
-                "img title"
-                "img desc";
-            gap: 8px 20px;
-
-            & img {
-                grid-area: img;
-            }
-
+        }
+        &__img {
+            flex: 0 0 auto;
+            width: 80px;
+            max-width: 100%;
+        }
+        &__body {
+            flex: 1 0 0%;
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
             & p:first-child {
                 grid-area: title;
             }
@@ -360,30 +365,32 @@
     }
 
     .values__container-cards {
-
         &__card {
-            grid-template-columns: 1fr;
-            gap: 0;
-            grid-template-areas:
-                "img"
-                "title"
-                "desc";
-
-            & img {
-                width: 60px;
-                height: 60px;
-                margin-bottom: 8px;
-            }
-
-            & p:nth-child(2) {
+            flex-wrap: wrap;
+        }
+        &__body {
+            flex: 0 0 auto;
+            width: 100%;
+            max-width: 100%;
+            row-gap: 4px;
+            & p:nth-child(1) {
                 font-size: 20px;
                 line-height: 28px;
-                margin-bottom: 4px;
             }
 
             & p:last-child {
                 font-size: 16px;
                 line-height: 22px;
+            }
+        }
+        &__img {
+            flex: 0 0 auto;
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 8px;
+            img {
+                width: 60px;
+                height: 60px;
             }
         }
     }
