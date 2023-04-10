@@ -9,7 +9,14 @@
 
 .btn-gradient {
     padding: 15px 35px;
-    background: none;
+    background: rgba(40,160,230,1);
+    background: -moz-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(40,160,230,1)), color-stop(100%, rgba(238,130,238,1)));
+    background: -webkit-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: -o-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: -ms-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: linear-gradient(to right, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28a0e6', endColorstr='#ee82ee', GradientType=1 );
     font-weight: $semi-bold;
     overflow: hidden;
     font-size: $size24;
@@ -22,31 +29,38 @@
 
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
-
-    &::after {
-        content: '';
-        position: absolute;
-        left: -250px;
-        right: -250px;
-        top: -250px;
-        bottom: -250px;
-        background: linear-gradient(289.39deg, #EE82EE 50%, #28A1E6 50.04%);
-        filter: blur(50px);
-        z-index: -1;
-        -webkit-transition: all 1s linear;
-        transition: all 1s linear;
-    }
-
-    &:hover::after {
-        -webkit-transition: all 1s linear;
-        transition: all 1s linear;
-        transform: rotate(180deg);
-    }
+    //
+    //&::after {
+    //    content: '';
+    //    position: absolute;
+    //    left: -250px;
+    //    right: -250px;
+    //    top: -250px;
+    //    bottom: -250px;
+    //    background: linear-gradient(289.39deg, #EE82EE 50%, #28A1E6 50.04%);
+    //    filter: blur(50px);
+    //    z-index: -1;
+    //    -webkit-transition: all 1s linear;
+    //    transition: all 1s linear;
+    //}
+    //
+    //&:hover::after {
+    //    -webkit-transition: all 1s linear;
+    //    transition: all 1s linear;
+    //    transform: rotate(180deg);
+    //}
 }
 
 .btn-gradient-two {
     padding: 15px 35px;
-    background: $gradient;
+    background: rgba(40,160,230,1);
+    background: -moz-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(40,160,230,1)), color-stop(100%, rgba(238,130,238,1)));
+    background: -webkit-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: -o-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: -ms-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    background: linear-gradient(to right, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28a0e6', endColorstr='#ee82ee', GradientType=1 );
     font-weight: 600;
     font-size: $size18;
     line-height: 24px;
@@ -63,26 +77,26 @@
     transition: all .1s linear;
 
 
-    &::before {
-        content: '';
-        position: absolute;
-        left: -250px;
-        right: -250px;
-        top: -250px;
-        bottom: -250px;
-        background: linear-gradient(289.39deg, #EE82EE 50%, #28A1E6 50.04%);
-        filter: blur(50px);
-        z-index: -1;
-        -webkit-transition: all 1s linear;
-        transition: all 1s linear;
-    }
-
-
-    &:hover::before {
-        -webkit-transition: all 1s linear;
-        transition: all 1s linear;
-        transform: rotate(180deg);
-    }
+    //&::before {
+    //    content: '';
+    //    position: absolute;
+    //    left: -250px;
+    //    right: -250px;
+    //    top: -250px;
+    //    bottom: -250px;
+    //    background: linear-gradient(289.39deg, #EE82EE 50%, #28A1E6 50.04%);
+    //    filter: blur(50px);
+    //    z-index: -1;
+    //    -webkit-transition: all 1s linear;
+    //    transition: all 1s linear;
+    //}
+    //
+    //
+    //&:hover::before {
+    //    -webkit-transition: all 1s linear;
+    //    transition: all 1s linear;
+    //    transform: rotate(180deg);
+    //}
 }
 
 
