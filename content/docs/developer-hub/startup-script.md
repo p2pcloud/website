@@ -4,48 +4,102 @@ description: "How to inject a startup bash or shell script into your decentraliz
 weight: 1050
 ---
 
-This document describes how to use the user startup script feature in the P2P Cloud project. This feature allows you to inject a script that will be executed on the first boot of a virtual machine (VM) to perform custom tasks such as installing software or configuring the system.
+P2P Cloud allows clients to configure their server instance by injecting custom scripts that will be initialized once the server boots after encrypting.
 
-## Script Location and Execution
+## Things To Know
+The script will be executed only once on the first boot of the VM. It will be run as the root user from the "/" directory. Remember, by default you will SSH into the VM as the cloud user.
 
-The user startup script will be placed in the following path: 
+We also recommend either creating a new user or use the built-in user cloud and navigating to its home directory.
+
+```
+Example:
+#!/bin/bash
+  
+USER_HOME=/home/cloud
+
+# Change the current working directory to the user's home directory
+cd $USER_HOME
+
+...
+
+```
+
+When you get directed to the WebSSH page for your VM, the script might still be running. Be aware of this when interacting with the VM, especially if you expect the script to complete its tasks.
+
+Upon boot, the user-startup script will be placed in the following path:
+
 ```
 /opt/p2pcloud/user_startup.sh
 ```
 
-The script will be executed only once on the first boot of the VM. It will be run as the `root` user from the `/` directory. Keep in mind that by default, you will SSH into the VM as the `cloud` user, so please be mindful of that.
+## Script Log
 
-## Log File
+The output of the script will be logged to the following file:
 
-The output of the script will be logged to the following file: `/opt/p2pcloud/user_startup.log`
+```
+/opt/p2pcloud/user_startup.log
+```
 
-You can check this log file to monitor the progress and troubleshoot any issues with the script. 
-```bash
+You can check this log file to monitor the progress and troubleshoot any issues with the script.
+
+```
 cat /opt/p2pcloud/user_startup.log
-````
-would work for this.
+```
+## How to Insert Script
+Inserting a script is easy. All you need to do is click on the Inject startup bash script box and paste the bash script in the text box(see below).
 
-## Running Scripts in the Background
+**Note:** Be sure to delete the placeholder contents in the box before entering in custom script
 
-When you SSH into the VM, the script might still be running. Be aware of this when interacting with the VM, especially if you are expecting the script to have completed its tasks.
+![script-pic](/src/assets/script-pic.png)
+
+Once you're done, click on **Create VM** and launch your server.
 
 ## Example Script
+Here is an example script that installs [Auto-GPT](https://github.com/Torantulino/Auto-GPT) on the default cloud profile and it's dependencies on the VM:
 
-Here is an example script that installs Docker and runs a container on the VM:
-
-```bash
-#!/bin/bash
-set -ex
-export DEBIAN_FRONTEND=noninteractive
-
-# install docker
-apt update
-apt install -y docker.io
-
-# setup docker for non-root
-sudo usermod -aG docker cloud
-newgrp docker
-
-# run an example container
-docker run -d --name redis redis
 ```
+#!/bin/bash
+  
+# Change the current working directory to the user's home directory
+USER_HOME=/home/cloud
+cd $USER_HOME
+  
+# Update and upgrade server
+sudo apt update
+sudo apt upgrade -y
+
+# Install ufw and allow SSH connections
+sudo apt install ufw -y
+sudo ufw allow ssh
+ 
+# Install python3 and pip
+sudo apt install apt-utils -y
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+
+# Install Git
+sudo apt install git -y
+
+# Clone Auto-GPT repository
+git clone https://github.com/Torantulino/Auto-GPT.git 
+
+# Change account privilege 
+sudo chown -R cloud:cloud ./Auto-GPT/
+
+#Finish installation
+cd Auto-GPT  
+
+# Install Python dependencies
+sudo pip3 install -r requirements.txt 
+```
+
+After boot, wait 1-3min, navigate to the **Auto-GPT** directory, and run:
+
+```
+python3 ./scripts/main.py --gpt3only
+```
+
+For additional setup instructions, visit the official Auto-GPT repo at [Github](https://github.com/Torantulino/Auto-GPT)
+
+[Click here](https://p2pcloud.io/docs/blog/p2p-vs-golem/) to learn how P2P Cloud is secure compared to other providers such as Golem Network. To learn more about P2P Cloud, visit our [website](https://p2pcloud.io/), follow us on [Twitter](https://twitter.com/p2pcloud_io), or join our [Telegram community](https://t.me/P2Pcloud).
+
