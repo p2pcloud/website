@@ -11,8 +11,8 @@ The script will be executed only once on the first boot of the VM. It will be ru
 
 We also recommend either creating a new user or use the built-in user cloud and navigating to its home directory.
 
-```
-Example:
+Example
+```bash
 #!/bin/bash
   
 USER_HOME=/home/cloud
@@ -20,7 +20,7 @@ USER_HOME=/home/cloud
 # Change the current working directory to the user's home directory
 cd $USER_HOME
 
-...
+# ...
 
 ```
 
@@ -28,7 +28,7 @@ When you get directed to the WebSSH page for your VM, the script might still be 
 
 Upon boot, the user-startup script will be placed in the following path:
 
-```
+```bash
 /opt/p2pcloud/user_startup.sh
 ```
 
@@ -36,13 +36,13 @@ Upon boot, the user-startup script will be placed in the following path:
 
 The output of the script will be logged to the following file:
 
-```
+```bash
 /opt/p2pcloud/user_startup.log
 ```
 
 You can check this log file to monitor the progress and troubleshoot any issues with the script.
 
-```
+```bash
 cat /opt/p2pcloud/user_startup.log
 ```
 ## How to Insert Script
@@ -57,7 +57,7 @@ Once you're done, click on **Create VM** and launch your server.
 ## Example Script
 Here is an example script that installs [Auto-GPT](https://github.com/Torantulino/Auto-GPT) on the default cloud profile and it's dependencies on the VM:
 
-```
+```bash
 #!/bin/bash
   
 # Change the current working directory to the user's home directory
@@ -95,7 +95,7 @@ sudo pip3 install -r requirements.txt
 
 After boot, wait 1-3min, navigate to the **Auto-GPT** directory, and run:
 
-```
+```bash
 python3 ./scripts/main.py --gpt3only
 ```
 
