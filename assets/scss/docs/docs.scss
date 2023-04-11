@@ -55,6 +55,21 @@
                 margin-bottom: 50px;
             }
 
+            & a {
+                color: $white;
+                -webkit-transition: all .3s linear;
+                transition: all .3s linear;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $blue-light;
+                }
+            }
+
+            & img {
+                display: inline-block;
+            }
+
             & p {
                 max-width: 100%;
                 font-weight: 400;
@@ -63,20 +78,7 @@
                 margin: 0;
                 margin-bottom: 16px;
 
-                & a {
-                    color: $white;
-                    -webkit-transition: all .3s linear;
-                    transition: all .3s linear;
-                    text-decoration: underline;
 
-                    &:hover {
-                        color: $blue-light;
-                    }
-                }
-
-                & img {
-                    display: inline-block;
-                }
             }
 
             & pre {
@@ -227,6 +229,10 @@
             display: grid;
             align-content: flex-start;
             gap: 25px;
+
+            a {
+                text-decoration: none;
+            }
 
             &__list {
 
