@@ -8,6 +8,9 @@ These Terms & Conditions ("Terms") govern the relationship between the hosting p
 ## Hosting Services
 The Provider offers virtual machines to the Client for rent. The Provider is solely responsible for providing and maintaining the virtual machines, and the Client is responsible for all costs associated with renting them.
 
+# Local regulations 
+The hosting provider must follow it's local laws and regulations, and each customer must do so as well.
+
 ## P2PCloud Platform
 P2PCloud is a set of smart contracts and software that facilitates transactions between the Provider and the Client. P2PCloud does not provide hosting services itself and is not a party to the hosting agreements between the Provider and the Client.
 
