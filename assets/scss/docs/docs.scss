@@ -1,3 +1,6 @@
+@import "./docs-mobile.scss";
+@import "./copy-code-button.scss";
+
 .title {
     font-weight: $bold;
     font-size: $sizeH3;
@@ -265,5 +268,3 @@
         }
     }
 }
-
-@import "./docs-mobile.scss";
