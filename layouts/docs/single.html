@@ -70,4 +70,8 @@
 </main>
 <script src="/design/copy-code-button.js"></script>
 
+{{ $js := resources.Get "js/copy-code-button.js" }}
+{{ $noCacheJs := $js | resources.Fingerprint "md5" }}
+<script src="{{ $noCacheJs.Permalink }}"></script>
+
 {{ end }}

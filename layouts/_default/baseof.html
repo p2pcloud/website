@@ -189,7 +189,9 @@
     </footer>
 
     {{ end }}
-    <script src="/design/menu.js"></script>
+    {{ $js := resources.Get "js/menu.js" }}
+    {{ $noCacheJs := $js | resources.Fingerprint "md5" }}
+    <script src="{{ $noCacheJs.Permalink }}"></script>
 
 </body>
 
