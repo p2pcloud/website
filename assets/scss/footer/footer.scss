@@ -1,5 +1,10 @@
 .footer {
     background: $black;
+
+}
+
+.footer a {
+    text-decoration: none;
 }
 
 .footer__content {
@@ -18,7 +23,7 @@
             align-items: center;
             justify-content: flex-end;
             gap: 32px;
-            
+
 
             & svg {
                 cursor: pointer;

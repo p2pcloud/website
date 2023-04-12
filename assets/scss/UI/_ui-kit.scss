@@ -9,14 +9,14 @@
 
 .btn-gradient {
     padding: 15px 35px;
-    background: rgba(40,160,230,1);
-    background: -moz-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(40,160,230,1)), color-stop(100%, rgba(238,130,238,1)));
-    background: -webkit-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: -o-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: -ms-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: linear-gradient(to right, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28a0e6', endColorstr='#ee82ee', GradientType=1 );
+    background: rgba(40, 160, 230, 1);
+    background: -moz-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(40, 160, 230, 1)), color-stop(100%, rgba(238, 130, 238, 1)));
+    background: -webkit-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: -o-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: linear-gradient(to right, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28a0e6', endColorstr='#ee82ee', GradientType=1);
     font-weight: $semi-bold;
     overflow: hidden;
     font-size: $size24;
@@ -29,6 +29,7 @@
 
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
+    text-decoration: none;
     //
     //&::after {
     //    content: '';
@@ -52,15 +53,16 @@
 }
 
 .btn-gradient-two {
+    text-decoration: none;
     padding: 15px 35px;
-    background: rgba(40,160,230,1);
-    background: -moz-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(40,160,230,1)), color-stop(100%, rgba(238,130,238,1)));
-    background: -webkit-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: -o-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: -ms-linear-gradient(left, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    background: linear-gradient(to right, rgba(40,160,230,1) 0%, rgba(238,130,238,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#28a0e6', endColorstr='#ee82ee', GradientType=1 );
+    background: rgba(40, 160, 230, 1);
+    background: -moz-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(40, 160, 230, 1)), color-stop(100%, rgba(238, 130, 238, 1)));
+    background: -webkit-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: -o-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: linear-gradient(to right, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28a0e6', endColorstr='#ee82ee', GradientType=1);
     font-weight: 600;
     font-size: $size18;
     line-height: 24px;
