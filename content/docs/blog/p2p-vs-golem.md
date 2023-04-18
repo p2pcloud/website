@@ -52,7 +52,7 @@ In conclusion, the current centralized infrastructure ecosystem risks censorship
 
 Golem is an open-source, decentralized supercomputer that connects users to providers leasing out their idle hardware and resources in a peer-to-peer fashion through their decentralized marketplace. On the other hand, P2P Cloud is a decentralized marketplace alternative that connects individuals, startups, small-medium businesses, and web3 node operators to providers offering Virtual Private Server (VPS) services.
 
-While both companies help decentralize the web by creating a distributed network of computers and enabling peer-to-peer interactions, they differ in their approach. Golem allows individuals to access resources as needed to process requests, whereas P2P Cloud will enable individuals to spin up their VPS instance through any provider with the required specs through the marketplace.
+While both companies help decentralize the web by creating a distributed network of computers and enabling peer-to-peer interactions, they differ in their approach. Golem allows individuals to access resources as needed to process requests, whereas P2P Cloud will enable individuals to spin up a VPS instance through any provider with the required specs through the marketplace without needing to trust the provider through TEE.
 
 Ultimately, using blockchain technology in conjunction with decentralized applications (dApps) can provide even more security and transparency for users, and we expect to see more emerging companies in the space. By creating a more decentralized alternative to how we interact in traditional and web3 ecosystems, we can move toward a more open and censorship-resistant internet that benefits all users.  
 
