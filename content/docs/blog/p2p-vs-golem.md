@@ -43,7 +43,7 @@ While both P2P Cloud and Golem Network aim to decentralize the web by providing 
 
 Golem allows individuals to access resources as needed to process requests. At the same time, P2P Cloud will enable individuals to spin up their VPS instance through any provider with the required specs through the marketplace.
 
-As for security, P2P Cloud is secured by default through its attestation process, which encrypts the enclave using your Metamask signature on the provider's machine, guaranteeing local encryption so that no one but you can access the VM. However, there are current limitations on who can be a provider since P2P Cloud can only run on hardware with AMD EPYC processors.
+As for security, P2P Cloud adopts a security-first approach by creating a Trusted Execution Environment (TEE) to protect users. The TEE ensures the confidentiality and integrity of data by encrypting the RAM and CPU registers, safeguarding the virtual machines running on the provider's infrastructure against any outside tampering. Additionally, data within the VM is encrypted using a key derived from your Metamask signature, guaranteeing local encryption so that no one but you can access the VM. This comprehensive security mechanism helps maintain the highest level of protection for your data and resources in the P2P Cloud platform.
 
 Golem currently isn't currently encrypted or have any security implementation, but they are still working on solutions to protect the requestor and providers on the network. As it stands, the hardening ultimately relies on the provider's setup of their machine.
 
