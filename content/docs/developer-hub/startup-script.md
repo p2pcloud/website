@@ -86,17 +86,48 @@ git clone https://github.com/Torantulino/Auto-GPT.git
 # Change account privilege 
 sudo chown -R cloud:cloud ./Auto-GPT/
 
-#Finish installation
-cd Auto-GPT  
+# Add a 3-minute delay before running the next command
+sleep 180
 
-# Install Python dependencies
-sudo pip3 install -r requirements.txt 
+cd Auto-GPT
+pip3 install -r requirements.txt
+
+
+echo '#!/bin/bash
+
+# Prompt user for environment variables
+echo "Please enter your Pinecone API key:"
+read PINECONE_API_KEY
+echo "Please enter your Pinecone environment:"
+read PINECONE_ENV
+echo "Please enter your OpenAI API key:"
+read OPENAI_API_KEY
+
+# Create .env file with user input and default values
+echo "PINECONE_API_KEY=$PINECONE_API_KEY
+PINECONE_ENV=$PINECONE_ENV
+OPENAI_API_KEY=$OPENAI_API_KEY
+ELEVENLABS_API_KEY=your-elevenlabs-api-key
+SMART_LLM_MODEL=\"gpt-4\"
+FAST_LLM_MODEL=\"gpt-3.5-turbo\"
+GOOGLE_API_KEY=
+CUSTOM_SEARCH_ENGINE_ID=
+USE_AZURE=False
+OPENAI_API_BASE=your-base-url-for-azure
+OPENAI_API_VERSION=api-version-for-azure
+OPENAI_DEPLOYMENT_ID=deployment-id-for-azure" > .env' > setup_env.sh
 ```
 
-After boot, wait 1-3min, navigate to the **Auto-GPT** directory, and run:
+After boot, wait 1-3min, navigate to the **Auto-GPT** directory, and enter in your OpenAI(required), and Pinecone(optional) by running:
 
 ```bash
-python3 ./scripts/main.py --gpt3only
+bash setup_env.sh
+```
+
+run the app:
+
+```bash
+python3 -m autogpt --gpt3only
 ```
 
 For additional setup instructions, visit the official Auto-GPT repo at [Github](https://github.com/Torantulino/Auto-GPT)
