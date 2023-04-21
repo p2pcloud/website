@@ -1,7 +1,7 @@
 ---
 title: "The Possible OVMF vulnerability in BDS phase"
 description: "The OVMF default recovery may select, load and run a malicious EFI application or kernel if unable to direct boot the guest owner kernel"
-weight: 3010
+weight: 3040
 ---
 
 AMD EPYC Processors is a nice technology, but it runs a software written by other people, which may contain own security vulnerabilities.
