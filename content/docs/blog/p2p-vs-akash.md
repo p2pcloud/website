@@ -1,7 +1,7 @@
 ---
 title: "P2P Cloud vs Akash Comparison"
 description: "Comparing P2P Cloud and Akash Network"
-weight: 1010
+weight: 3010
 ---
 
 ### Overview:
