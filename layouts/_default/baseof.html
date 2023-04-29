@@ -66,11 +66,15 @@
                     {{$activeClass := ""}}
                     {{ if "/docs" | strings.HasPrefix .RelPermalink }}
                     {{ $activeClass = "active" }}
-                    {{ end }}
-                    <li class="header__container-nav__list-item  {{$activeClass}}">
+                    {{ end }}<li class="header__container-nav__list-item  {{$activeClass}}">
                         <a class="header__container-nav__list-item__link" href="/docs/developer-hub/developer-quick-start/">Docs</a>
                     </li>
-                    <li class="header__container-nav__list-item"><a class="header__container-nav__list-item__link" href="https://github.com/p2pcloud/website" target="_blank">Github</a></li>
+                    <li class="header__container-nav__list-item">
+                        <a class="header__container-nav__list-item__link" href="https://github.com/p2pcloud/website" target="_blank">Github</a>
+                    </li>
+                    <li class="header__container-nav__list-item">
+                        <a class="header__container-nav__list-item__link" href="https://calendly.com/p2pcloud/private-chat" target="_blank">Let's meet</a>
+                    </li>
                 </ul>
                 <div class="header__container-nav__btn">
                     <a class="header__container-nav__btn-button" href="/panel.html">App</a>
@@ -89,6 +93,8 @@
                         <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="/">Main</a></li>
                         <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="/docs/developer-hub/developer-quick-start/">Docs</a></li>
                         <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="https://github.com/p2pcloud/website" target="_blank">Github</a></li>
+                        <li class="menu__nav-list-item"><a class="menu__nav-list-item__link" href="https://calendly.com/p2pcloud/private-chat" target="_blank">Let's meet</a></li>
+
                     </ul>
 
                     {{ range .Site.Sections }}
@@ -155,6 +161,9 @@
                         <li class="footer__content-menu__list-item"><a class="footer__content-menu__list-item__link" href="/">Main</a></li>
                         <li class="footer__content-menu__list-item"><a class="footer__content-menu__list-item__link" href="/docs/developer-hub/developer-quick-start/">Docs</a></li>
                         <li class="footer__content-menu__list-item"><a class="footer__content-menu__list-item__link" href="https://github.com/p2pcloud/website" target="_blank">Github</a></li>
+                        <li class="footer__content-menu__list-item"><a class="footer__content-menu__list-item__link" href="https://calendly.com/p2pcloud/private-chat"
+                                target="_blank">Let's&nbsp;meet</a>
+                        </li>
                         <li class="footer__content-menu__list-item"><a class="footer__content-menu__list-item__link" href="/panel.html">App</a></li>
                     </ul>
                     <div class="footer__content-menu__social">
