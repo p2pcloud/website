@@ -45,7 +45,9 @@ While P2P Cloud and Golem Network aim to decentralize the web by providing alter
 
 Golem allows individuals to access resources as needed to process requests. At the same time, P2P Cloud will enable individuals to spin up their VM through any provider with the required specs through the marketplace.
 
+
 As for security, P2P Cloud is secured by default through its attestation process, which encrypts the enclave using your Metamask signature on the provider's machine, guaranteeing a TEE that no one but you can access the VM. However, there are limitations on who can be a provider since P2P Cloud can only run on hardware with AMD EPYC processors.
+
 
 Golem isn't currently encrypted or has any security implementation, but they are still working on solutions to protect the requestor and providers on the network. As it stands, the hardening ultimately relies on the provider's setup of their machine.
 
@@ -54,7 +56,9 @@ In conclusion, the current centralized infrastructure ecosystem risks censorship
 
 Golem is an open-source, decentralized supercomputer that connects users to providers leasing out their idle hardware and resources in a peer-to-peer fashion through their decentralized marketplace. On the other hand, P2P Cloud is a decentralized marketplace alternative that connects individuals, startups, SMBs, and web3 node operators to providers offering VMs.
 
+
 While both companies help decentralize the web by creating a distributed network of computers and enabling peer-to-peer interactions, they differ in their approach. Golem allows individuals to access resources as needed to process requests, whereas P2P Cloud will enable individuals to spin up a VM through any provider without needing to trust the provider's thanks through a Trusted Execution Environment.
+
 
 By creating a more decentralized alternative to how we interact in traditional and web3 ecosystems, we can move toward a more open and censorship-resistant internet that benefits all users.  
 
