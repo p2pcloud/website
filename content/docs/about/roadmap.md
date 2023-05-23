@@ -17,7 +17,10 @@ Last updated: October 2022
 - ~~Do not rely on p2pcloud infrastructure for attestation~~ Done in December 2022
 - ~~Direct NVME attachment support~~ Done in January 2023
 - ~~Mainnet previw~~ Done in January 2023
-- Do not rely on p2pcloud infrastructure for disk encryption
-- Move all infrastructure of p2pcoud.io to p2pcloud
-- General availability of dedicated IPv4
+- ~~Do not rely on p2pcloud infrastructure for disk encryption~~ Done in February 2023
+- ~~General availability of dedicated IPv4~~ Done in February 2023
+- Upgrade protocol to include dynamic VM configurations and off-chain price negotiation
+- Run a public "Hack me if you can" challenge to test the security of p2pcloud
+- Public beta for providers
 - Mainnet release
+- Software marketplace
