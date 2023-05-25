@@ -1,48 +1,33 @@
 ---
-title: "Terms & Conditions"
+title: "Terms of service"
 ---
 
-## Introduction
-These Terms & Conditions ("Terms") govern the relationship between the hosting provider ("Provider"), the client ("Client"), and P2P Cloud ("P2PCloud"), a decentralized marketplace for Virtual Private Server (VPS) services. By using the P2PCloud platform, you agree to be bound by these Terms.
+Welcome to P2PCloud. By using our services, you, the "Client", and the "Hoster", agree to these terms and conditions ("Terms of Service"). P2PCloud operates as a connecting platform and does not directly provide hosting services.
 
-## Hosting Services
-The Provider offers virtual machines to the Client for rent. The Provider is solely responsible for providing and maintaining the virtual machines, and the Client is responsible for all costs associated with renting them.
+1. **Compliance**: The Hoster and Client must comply with all applicable laws in the Client's country, the Hoster's country, and the United States.
 
-## Local regulations 
-The hosting provider is required to abide by its local and federal laws and regulations. Likewise, each customer must comply with their respective local and federal laws and regulations.
+2. **Prohibited Activities**: Both the Hoster and the Client agree not to use our services for activities related to illegal drugs, tobacco, adult content, copyright violation, money laundering, gambling, torrenting(including legal), and hacking (including penetration testing), regardless of the legality in their jurisdictions.
 
-## US Export Regulations
-Any client and provider residing in the United States must comply with the [Export Administration Regulations](https://www.bis.doc.gov/index.php/regulations/export-administration-regulations-ear) and [Office of Foreign Assets Control](https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx) regulations.
+3. **Misuse of Services**: Any misuse of our services or inappropriate conduct by either the Hoster or the Client will result in legal repercussions. The party responsible for such actions will be solely accountable.
 
-## P2PCloud Platform
-P2PCloud is a set of smart contracts and software that facilitates transactions between the Provider and the Client. P2PCloud does not provide hosting services itself and is not a party to the hosting agreements between the Provider and the Client.
+4. **Access to P2PCloud's Software**: P2PCloud grants both the Hoster and the Client access to its software for free, conditional upon handling all payments via the P2PCloud platform. P2PCloud reserves the right to withdraw this privilege at any time.
 
-## Beta Stage
-P2PCloud is currently in open Beta stage and is not production-ready. By using P2PCloud, you acknowledge the potential risks and limitations associated with a Beta product.
+5. **Software in Beta**: The Client should be aware that P2PCloud's software is currently in beta and should manage their risks accordingly, including keeping regular backups of their data.
 
-## Limitation of Liability
-P2PCloud does not assume any responsibility for any hacks, data loss, or other damages that may occur while using the platform. The Client and Provider agree to indemnify and hold harmless P2PCloud from any claims, damages, or losses resulting from their use of the platform.
+6. **Vulnerability Disclosure**: If the Hoster or the Client discovers a security vulnerability, they are required to inform P2PCloud within 24 hours at disclosure@p2pcloud.io .
 
-## Testnet Instances
-Testnet instances hosted by P2PCloud are for research and development purposes only. They should not be used for production or commercial applications.
+7. **Termination**: P2PCloud, the Hoster, or the Client can terminate this agreement at any time if any party breaches the rules. Parties can also voluntarily withdraw at any time.
 
-## Vulnerability Disclosure
-Clients and Providers must promptly disclose any vulnerabilities found in the P2PCloud platform to the P2PCloud team or make them public, so that appropriate action can be taken.
+8. **Governing Law**: These Terms of Service will be governed by US law. Any disputes will be handled under US law.
 
-## Non-commercial Use of P2PCloud Software
-Any software developed by the P2PCloud team cannot be used for commercial purposes without the prior written consent of P2PCloud. That does not apply to use of the P2PCloud platform itself.
+9. **Acceptance of Terms**: If the Hoster or the Client continues to use the service after updates to the agreement, this will be taken as acceptance of the new terms.
 
-## Changes to Terms & Conditions
-P2PCloud reserves the right to modify these Terms at any time. Continued use of the platform after any such changes constitutes acceptance of the new Terms.
+10. **Payments and Commission**: P2PCloud will manage the Hoster's payments and will take a 20% commission.
 
-## Governing Law
-These Terms shall be governed and construed in accordance with the laws of the jurisdiction where P2PCloud is based, without regard to its conflict of law provisions.
+11. **Unauthorised Activities**: The Hoster must not attempt to hack into the Client's Virtual Machines (VMs), intercept network traffic, or penetrate or gain unauthorized access to the Client's systems, networks, or data.
 
-## Severability
-If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions shall remain in effect.
+12. **Support**: If you require support, please contact help@p2pcloud.io.
 
-## Miscellaneous
-These Terms, together with the P2PCloud Privacy Policy, constitute the entire agreement between the parties regarding P2PCloud and supersede any prior agreements or understandings. No waiver of any provision of these Terms shall be effective unless in writing and signed by the party against whom the waiver is sought to be enforced.
+13. **Legal Compliance**: Despite the decentralized nature of our services, all parties must still comply with all relevant laws.
 
-## Author
-These Terms were written by [GPT4](https://openai.com/research/gpt-4) under guidance of [P2PCloud](https://p2pcloud.io) team.
+By using our services, you agree to these Terms of Service. If you don't agree to them, you must not use our services. Please read and understand these terms before accepting them.
