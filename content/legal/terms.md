@@ -31,3 +31,5 @@ Welcome to P2PCloud. By using our services, you, the "Client", and the "Hoster",
 13. **Legal Compliance**: Despite the decentralized nature of our services, all parties must still comply with all relevant laws.
 
 By using our services, you agree to these Terms of Service. If you don't agree to them, you must not use our services. Please read and understand these terms before accepting them.
+
+Last updated on May 25th, 2023.
