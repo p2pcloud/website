@@ -1,5 +1,6 @@
 ---
 title: "How To Use The Faucet"
+draft: true
 description: "How to use the faucet and get test tokens"
 weight: 1020
 ---
