@@ -76,6 +76,7 @@ sudo ufw allow ssh
 sudo apt install apt-utils -y
 sudo apt install python3 -y
 sudo apt install python3-pip -y
+sudo apt install python3.10-venv
 
 # Install Git
 sudo apt install git -y
@@ -90,8 +91,9 @@ sudo chown -R cloud:cloud ./Auto-GPT/
 sleep 180
 
 cd Auto-GPT
-pip3 install -r requirements.txt
-
+python -m venv venvAutoGPT
+source venvAutoGPT/bin/activate
+pip3 install --upgrade pip
 
 echo '#!/bin/bash
 
@@ -113,8 +115,8 @@ FAST_LLM_MODEL=\"gpt-3.5-turbo\"
 GOOGLE_API_KEY=
 CUSTOM_SEARCH_ENGINE_ID=
 USE_AZURE=False
-OPENAI_API_BASE=your-base-url-for-azure
-OPENAI_API_VERSION=api-version-for-azure
+# OPENAI_API_BASE=
+# OPENAI_API_VERSION=
 OPENAI_DEPLOYMENT_ID=deployment-id-for-azure" > .env' > setup_env.sh
 ```
 
@@ -127,10 +129,10 @@ bash setup_env.sh
 run the app:
 
 ```bash
-python3 -m autogpt --gpt3only
+./run.sh 
 ```
 
-For additional setup instructions, visit the official Auto-GPT repo at [Github](https://github.com/Torantulino/Auto-GPT)
+For additional setup instructions, see the official Auto-GPT [docs](https://docs.agpt.co/setup/)
 
 [Click here](https://p2pcloud.io/docs/blog/p2p-vs-golem/) to learn how P2P Cloud is secure compared to other providers such as Golem Network. To learn more about P2P Cloud, visit our [website](https://p2pcloud.io/), follow us on [Twitter](https://twitter.com/p2pcloud_io), or join our [Telegram community](https://t.me/P2Pcloud).
 
