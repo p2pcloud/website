@@ -122,11 +122,13 @@ OPENAI_DEPLOYMENT_ID=deployment-id-for-azure" > .env' > setup_env.sh
 
 After boot, wait 1-3min, navigate to the **Auto-GPT** directory, and enter in your OpenAI(required), and Pinecone(optional) by running:
 
+> Note: Change repo branch from Main -> Staging
+
 ```bash
 bash setup_env.sh
 ```
 
-run the app:
+Run the app:
 
 ```bash
 ./run.sh 
