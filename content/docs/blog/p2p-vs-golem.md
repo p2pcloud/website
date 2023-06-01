@@ -11,7 +11,7 @@ For developers, server admins,  RPC providers, startups, small and medium-sized 
 
 Because of this, we have seen an emergence of companies like P2P Cloud, POKT, Golem, Akash, and more aiming to disrupt the space by creating a more decentralized alternative to how we interact in traditional and web3 ecosystems.  
 
-This post will explore how P2P Cloud and Golem Network are working to decentralize the world's infrastructure ecosystem. This post will explore how P2P Cloud and Akash Network are working to decentralize the world's infrastructure ecosystem.
+This post will explore how P2P Cloud and Golem Network are working to decentralize the world's infrastructure ecosystem.
 
 ### What is P2P Cloud:
 P2P Cloud bridges the gap of security and reliability through a decentralized marketplace connecting anyone from developers, startups, SMBs, RPC providers, etc., to providers offering virtual machines (VM), granting security and reliability in a trustless way.
