@@ -1,6 +1,6 @@
 baseURL = 'https://p2pcloud.io/'
 languageCode = 'en-us'
-title = 'Decentralized Cloud on Avalanche blockchain'
+title = 'Decentralized Cloud'
 [markup]
   [markup.highlight]
     anchorLineNos = false
