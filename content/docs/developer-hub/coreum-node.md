@@ -1,3 +1,9 @@
+---
+title: "Running Coreum Full Node"
+description: "Run a Coreum node under 5 min."
+weight: 1040
+---
+
 ### Overview 
 
 Coreum is one of the leading enterprise-grade blockchains geared towards making decentralized applications compliant with ISO20022 compatibility, IBC interoperability, and [Smart Tokens](https://www.coreum.com/smart-tokens). P2P Cloud is a decentralized marketplace that bridges the gap of affordability and reliability by offering encrypted virtual machines(VMs) for less than a third of the cost compared to the top 3(AWS, GCP, Azure), keeping the web3 ecosystem secure and decentralized. 
