@@ -9,7 +9,7 @@ weight: 2020
 Most of the internet today is hosted on large corporations like Amazon, Microsoft, and Google servers, making it difficult for smaller server owners to compare prices and verify security. 
 
 
-P2P Cloud bridges the gap between security and reliability by creating a Trustless Execution Environment(TEE). Clients can run their website, application, database, or RPC node in a secure environment without outside tampering creating a trustless environment. 
+P2P Cloud bridges the gap between security and reliability by creating a Trusted Execution Environment(TEE). Clients can run their website, application, database, or RPC node in a secure environment without outside tampering creating a trustless environment. 
 
 A transparent report card system lets users see every server's uptime and price per VM.   
 
