@@ -1,5 +1,5 @@
 ---
-title: "Protocol Update: 1 Click Deployment"
+title: "Marketplace Update: 1 Click Deployment"
 description: "New Feature Alert! Speeding Up Your Deployments in a Few Clicks "
 weight: 3010
 ---
