@@ -8,7 +8,14 @@ Funding an account is as easy as 1,2,3! This blog will detail how you can connec
 
 > Note: This post assumes you already have a MetaMask wallet [downloaded](https://metamask.io/download/?utm_source=website&utm_medium=blog&utm_campaign=wallet%20tutorial&utm_content=metamask-dl) and set up. 
 
-![Funding Tutorial](/src/assets/wallet-tutorial.mp4)
+
+
+
+https://github.com/p2pcloud/website/assets/23203842/b3d738be-c288-4e4e-9935-b274d9487f72
+
+
+
+
 
 To add funds or top off your wallet:
 
