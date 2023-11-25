@@ -7,7 +7,7 @@ weight: 3030
 ### What is P2P Cloud?
 P2P Cloud is a decentralized marketplace that brings reliability and security to virtual machines(VMs) for less than a third of the cost. 
 
-Thanks to our Trusted Execution Environment(TEE), anyone can run any application without worrying about outside tampering, whether you are a developer, startup, small medium-sized business(SMB), or RPC provider. This creates a trustless ecosystem where clients don't have to trust the provider.
+Thanks to a Trusted Execution Environment(TEE), anyone can run any application without worrying about outside tampering, whether you are a developer, startup, small medium-sized business(SMB), or RPC provider. This creates a trustless ecosystem where clients don't have to trust the provider.
 
 P2P Cloud ensures security through an attestation process that takes a user's digital wallet signature, verifies user access, and encrypts the CPU, RAM, and disk.  
 
