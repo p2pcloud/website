@@ -1,0 +1,14 @@
+[menus]
+[[menus.test]]
+    name = 'Item 1'
+    URL = '/'
+    weight = 10
+[[menus.test]]
+    name = 'Long name Item 2'
+    URL = '/products'
+    weight = 20
+[[menus.test]]
+    name = 'Item 3'
+    URL = '/services'
+    weight = 30
+

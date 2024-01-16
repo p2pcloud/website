@@ -1,0 +1,45 @@
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+{{- $width := .width }}
+{{- $name := .name }}
+
+{{- with index site.Menus $menuID }}
+  <div id="{{ $menuID }}" class="dropdown-wrapper">
+    <input class="dropdown__input" id="dropdown__input__{{ $menuID }}" type="checkbox" class="header__container-nav__list-item" style="display: none;">
+    <div class="header__container-nav__list-item" style="width: {{ $width }};">
+      <label for="dropdown__input__{{ $menuID }}" class="dropdown_input_label header__container-nav__list">{{ $name }}</label>
+    </div>
+    <nav class="dropdown__menu__entries">
+        <ul>
+        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+    </nav>
+  </div>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $attrs := dict "href" .URL }}
+    {{- $name := .Name }}
+    {{- with .Identifier }}
+      {{- with T . }}
+        {{- $name = . }}
+      {{- end }}
+    {{- end }}
+    <li class="dropdown__menu__entry">
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >{{ $name }}</a>
+      <!-- {{- with .Children }}
+        <ul>
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+      {{- end }} -->
+    </li>
+  {{- end }}
+{{- end }}
