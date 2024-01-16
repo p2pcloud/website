@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+.dropdown-wrapper .header__container-nav__list-item {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+} 
+
 .dropdown__menu__entries {
     position:absolute;
     background-color: $black-light;
@@ -39,6 +44,7 @@
 }
 
 .dropdown__menu__entries ul {
+    width: max-content;
     box-sizing: content-box;
     padding: 0;
 }
@@ -49,6 +55,7 @@
     padding: 0;
     line-height: 1.5em;
 }
+
 .dropdown__menu__entry > a {
     display: block;
     padding: 0.5em 1em;
@@ -62,4 +69,8 @@
 
 .dropdown__menu__entry:hover {
     background: linear-gradient(289.39deg,#EE82EE 20%,#28A1E6 100.04%);
+}
+
+.dropdown__menu__entry:hover > a {
+    color: black;
 }

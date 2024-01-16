@@ -1,12 +1,11 @@
 {{- $page := .page }}
 {{- $menuID := .menuID }}
-{{- $width := .width }}
 {{- $name := .name }}
 
 {{- with index site.Menus $menuID }}
   <div id="{{ $menuID }}" class="dropdown-wrapper">
     <input class="dropdown__input" id="dropdown__input__{{ $menuID }}" type="checkbox" class="header__container-nav__list-item" style="display: none;">
-    <div class="header__container-nav__list-item" style="width: {{ $width }};">
+    <div class="header__container-nav__list-item">
       <label for="dropdown__input__{{ $menuID }}" class="dropdown_input_label header__container-nav__list">{{ $name }}</label>
     </div>
     <nav class="dropdown__menu__entries">
