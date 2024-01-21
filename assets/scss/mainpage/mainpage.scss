@@ -865,6 +865,12 @@
     border-left: 4px solid $violet;
 }
 
+.unique-section {
+    background-image: url('/design/img/bg-grid.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .active-menu {
     background: $gray-dark;
 }
