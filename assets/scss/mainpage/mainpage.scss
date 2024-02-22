@@ -610,6 +610,51 @@
     }
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: $black-light;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(255, 255, 255);
+    z-index: 1;
+    border-radius: 12px;
+    & a {
+        // Use the same color as the other header links
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        &:hover {
+            background: linear-gradient(to right, rgba(40, 160, 230, 1) 0%, rgba(238, 130, 238, 1) 100%);
+            color: $black-dark;
+        }
+    }
+}
+.dropdown-button {
+    background: $black-light;
+    color: $white-light; // Set the text color to white
+    padding: 0px 0px 0px 0px;
+    font-size: $size18;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 12px;
+    &:hover {
+        //background: $blue-light;
+        color: $violet;
+    }
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
 
 
 .values {
@@ -818,6 +863,12 @@
 .border-desc {
     padding: 7px 0 9px 24px;
     border-left: 4px solid $violet;
+}
+
+.unique-section {
+    background-image: url('/design/img/bg-grid.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .active-menu {
